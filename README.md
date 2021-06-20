@@ -1,6 +1,6 @@
 # CSV to HTML
 
-This is a quick solution to convert a CSV to a HTML page.
+This is a quick solution to convert a CSV to an HTML page.
 
 ## How
 
