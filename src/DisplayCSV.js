@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Papa from "papaparse";
 import Row from "./Row";
 
-function RenderCSV({ file }) {
+function DisplayCSV({ file }) {
     const [headers, setHeaders] = useState(null);
     const [rows, setRows] = useState(null);
     useEffect(() => {
@@ -22,4 +22,4 @@ function RenderCSV({ file }) {
     );
 }
 
-export default RenderCSV;
+export default DisplayCSV;

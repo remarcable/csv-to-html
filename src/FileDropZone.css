@@ -1,12 +1,15 @@
 .drop-zone {
-    background-color: #f3f0f0;
-    border-radius: 4px;
     width: 400px;
     height: 200px;
+
     margin: 20px;
     padding: 10px;
+
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+
+    background-color: #f3f0f0;
+    border-radius: 4px;
 }

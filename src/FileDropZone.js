@@ -1,17 +1,22 @@
 import React from "react";
 import { useDropzone } from "react-dropzone";
+
 import "./FileDropZone.css";
 
 function FileDropZone({ onDrop }) {
-    const { getRootProps, getInputProps, isDragActive } = useDropzone({ onDrop, accept: ".csv" });
+    const { getRootProps, getInputProps, isDragActive } = useDropzone({
+        onDrop,
+        accept: ".csv",
+        maxFiles: 1,
+    });
 
     return (
         <div {...getRootProps()} className="drop-zone">
             <input {...getInputProps()} />
             {isDragActive ? (
-                <p>Drop the files here ...</p>
+                <p>Drop the file here ...</p>
             ) : (
-                <p>Drag 'n' drop some files here, or click to select files</p>
+                <p>Drag 'n' drop a CSV here, or click to select one</p>
             )}
         </div>
     );

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./App.css";
 import FileDropZone from "./FileDropZone";
-import RenderCSV from "./RenderCSV";
+import DisplayCSV from "./DisplayCSV";
 
 function App() {
     const [file, setFile] = useState(null);
@@ -11,7 +11,7 @@ function App() {
 
     return (
         <section className="App">
-            {file ? <RenderCSV file={file} /> : <FileDropZone onDrop={onDrop} />}
+            {file ? <DisplayCSV file={file} /> : <FileDropZone onDrop={onDrop} />}
         </section>
     );
 }
