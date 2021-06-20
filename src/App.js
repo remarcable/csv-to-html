@@ -11,6 +11,7 @@ function App() {
 
     return (
         <section className="App">
+            <h1>CSV to HTML converter</h1>
             {file ? <DisplayCSV file={file} /> : <FileDropZone onDrop={onDrop} />}
         </section>
     );
