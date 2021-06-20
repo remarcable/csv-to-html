@@ -1,10 +1,17 @@
+import { useState } from 'react';
 import './App.css';
+import FileDropZone from "./FileDropZone";
 
 function App() {
-  return (
-    <div className="App">
+  const [file, setFile] = useState(null);
+  const onDrop = (droppedFile) => {
+    setFile(droppedFile[0]);
+  }
 
-    </div>
+  return (
+    <section className="App">
+      {file ? <p>Has File</p> : <FileDropZone onDrop={onDrop} />}
+    </section>
   );
 }
 
