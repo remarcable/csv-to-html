@@ -1,4 +1,4 @@
-# CSV to HTML
+# [CSV to HTML](https://marcnitzsche.de/csv-to-html)
 
 This is a quick solution to convert a CSV to an HTML page.
 
